@@ -22,3 +22,19 @@ $('.theme-bar').find('span').on('click', function () {
     saveSelector.color = $(this).attr('data-color');
     storageSave(saveSelector);
 })
+
+$('.switch-btn').click(function () {
+    if ($(window).width() > 1024) {
+        $('.left-sidebar').toggleClass('left-sidebar-nav-hide');
+        $('.content-wrapper').toggleClass('content-wrapper-active');
+    } else {
+        $('.left-sidebar').toggleClass('left-sidebar-nav-hide-xs');
+        $('.content-wrapper').toggleClass('content-wrapper-active-xs');
+    }
+
+    if ($(window).width() < 1024) {
+        $('.left-sidebar').addClass('left-sidebar-nav-hide');
+    } else {
+        $('.left-sidebar').removeClass('left-sidebar-nav-hide');
+    }
+});

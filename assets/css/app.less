@@ -2,6 +2,7 @@
 body[data-type='login'] {
   background: url("../img/login_bg.jpg") center no-repeat;
 }
+
 .am-panel-secondary {
   transition: all 0.4s ease-in-out;
   position: fixed;
@@ -9,12 +10,15 @@ body[data-type='login'] {
   top: 50px;
   right: -150px;
 }
+
 .theme-black {
   background-color: #282d2f;
 }
+
 .theme-white {
   background-color: #e9ecf3;
 }
+
 .theme-color {
   float: left;
   width: 25px;
@@ -23,17 +27,21 @@ body[data-type='login'] {
   margin-bottom: 15px;
   cursor: pointer;
 }
+
 .color-white {
   background-color: white;
   border: 2px solid #eeeeee;
 }
+
 .color-black {
   background-color: black;
   border: 2px solid #222222;
 }
+
 .active-theme {
   right: 0px;
 }
+
 .login-box {
   width: 500px;
   margin: 12% auto 0px;
@@ -42,6 +50,7 @@ body[data-type='login'] {
   border-radius: 3px;
   padding: 60px;
 }
+
 .login-logo {
   max-width: 160px;
   height: 206px;
@@ -49,22 +58,29 @@ body[data-type='login'] {
   margin-bottom: 20px;
   background: url("../img/logoa.png") center no-repeat;
 }
+
 /*-------------------------------登录页css结束-------------------------------*/
+body[data-type='index'] {
+}
+
 @media screen and (max-width: 1024px) {
   .header-logo {
     width: 100%;
     float: none;
   }
 }
+
 @media screen and (min-width: 1025px) {
   .header-logo {
     height: 59px;
     width: 240px;
   }
 }
+
 header {
   position: relative;
 }
+
 .header-logo {
   display: table;
   text-align: center;
@@ -72,69 +88,80 @@ header {
   z-index: 1000;
   border-bottom: 1px solid gainsboro;
 }
+
 .header-logo a {
   display: table-cell;
   vertical-align: middle;
 }
+
 .header-logo a img {
   width: 170px;
 }
-.switch-btn,
-.am-topbar-right {
+
+.switch-btn, .am-topbar-right {
   line-height: 56px;
 }
+
 .switch-btn {
   cursor: pointer;
   color: darkgray;
   padding: 0px 20px;
   border-left: 1px solid gainsboro;
   border-right: 1px solid gainsboro;
+  &:hover {
+    color: gray;
+  }
 }
-.switch-btn:hover {
-  color: gray;
-}
+
 .search-input {
   margin-left: 10px;
 }
+
 .am-dropdown-toggle {
   position: relative;
   margin-left: 20px;
   padding: 10px;
 }
+
 .am-badge {
   position: absolute;
   left: 20px;
   top: 5px;
 }
+
 .hover-color:hover {
   color: gainsboro;
 }
+
 a.menu-message-item {
   width: 300px;
   height: 75px;
   border-bottom: 1px solid gainsboro;
   padding: 6px 0px;
+  &:hover, &:active {
+    color: #0e93d7;
+  }
 }
-a.menu-message-item:hover,
-a.menu-message-item:active {
-  color: #0e93d7;
-}
+
 .menu-icon {
   width: 50px;
   height: 60px;
   padding: 10px 10px 0px 5px;
   float: left;
 }
+
 .menu-message-body {
   display: inline-block;
   width: 80%;
   height: 63px;
   float: left;
 }
+
 .enter-list {
   line-height: 35px;
   vertical-align: middle;
 }
+
 @media screen and (max-width: 1024px) {
   .left-sidebar {
     transition: all 0.4s ease-in-out;
@@ -146,6 +173,7 @@ a.menu-message-item:active {
     left: -240px;
   }
 }
+
 @media screen and (min-width: 1025px) {
   .left-sidebar {
     transition: all 0.4s ease-in-out;
@@ -157,28 +185,35 @@ a.menu-message-item:active {
     left: 0px;
   }
 }
+
 .left-sidebar-nav {
   color: darkgray;
 }
+
 .left-sidebar-nav-hide {
   left: -240px;
 }
+
 .left-sidebar-nav-hide-xs {
   left: 0px;
 }
+
 .left-sidebar-nav li {
   list-style: none;
 }
+
 .left-sidebar-nav .left-sidebar-nav-header {
   border-top: 1px solid gainsboro;
   border-bottom: 1px solid gainsboro;
   padding: 20px;
 }
+
 .left-sidebar-nav .left-sidebar-nav-link .left-sidebar-link-icon {
   margin-right: 8px;
   width: 20px;
   font-size: 16px;
 }
+
 .left-sidebar-nav .left-sidebar-nav-link a {
   display: block;
   color: grey;
@@ -186,16 +221,17 @@ a.menu-message-item:active {
   padding: 12px 20px;
   border-left: 3px solid white;
   cursor: pointer;
+  &:hover, &:active {
+    color: #0f9ae0;
+    background-color: gainsboro;
+    border-left: 3px solid #3bb4f2;
+  }
 }
-.left-sidebar-nav .left-sidebar-nav-link a:hover,
-.left-sidebar-nav .left-sidebar-nav-link a:active {
-  color: #0f9ae0;
-  background-color: gainsboro;
-  border-left: 3px solid #3bb4f2;
-}
+
 .left-sidebar-nav .left-sidebar-nav-link .active {
   border-left: 3px solid #3bb4f2;
 }
+
 @media screen and (max-width: 1024px) {
   .content-wrapper {
     transition: all 0.4s ease-in-out;
@@ -206,6 +242,7 @@ a.menu-message-item:active {
     background-color: gainsboro;
   }
 }
+
 @media screen and (min-width: 1025px) {
   .content-wrapper {
     transition: all 0.4s ease-in-out;
@@ -216,9 +253,11 @@ a.menu-message-item:active {
     background-color: gainsboro;
   }
 }
+
 .content-wrapper-active {
   margin-left: 0px;
 }
+
 .content-wrapper-active-xs {
   margin-left: 240px;
 }

@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
-    <title>管理员登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>主页</title>
 
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
@@ -29,35 +28,173 @@
     <link rel="stylesheet" href="assets/css/amazeui.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
 </head>
 <body data-type="index">
 <div class="am-g">
-    <div class="am-panel am-panel-secondary theme-panel active-theme">
-        <div class="am-panel-hd">
-            <h5 class="am-panel-title"><i class="am-icon-gear am-icon-spi"></i>
-                选择主题</h5>
+    <header class="am-topbar am-topbar-fixed-top">
+        <div class="header-logo am-topbar-brand">
+            <a href="#"><img src="assets/img/logo.png"></a>
         </div>
-        <div class="am-panel-bd theme-bar">
-            <span class="theme-color color-white" data-color="theme-white"></span>
-            <span class="theme-color color-black" data-color="theme-black"></span>
-        </div>
-    </div>
-    <header>
-        <div class="am-fl logo">
-            <a href="#"><img src="assets/img/logo.png" width="150px"></a>
-        </div>
-        <div class="header-right">
-            <div class="am-fl am-icon-list">
-
+        <!--显示隐藏导航栏后的图标-->
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only"
+                data-am-collapse="{target: '#doc-topbar-collapse'}"
+                data-am-sticky="{top: 5}">
+            <span class="am-sr-only"></span>
+            <span class="am-icon-bars"></span>
+        </button>
+        <div class="am-collape am-topbar-collapse" id="doc-topbar-collapse">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li class="switch-btn">
+                    <i class="am-icon-list am-icon-sm"></i>
+                </li>
+            </ul>
+            <form class="am-topbar-form am-topbar-left am-form-inline" role="search">
+                <div class="am-form-group">
+                    <input type="text" class="am-form-field search-input" placeholder="请输入搜索内容">
+                    <input type="submit" class="am-btn am-btn-success" value="搜索">
+                </div>
+            </form>
+            <div class="am-topbar-right">
+                <a class="am-vertical-align-middle am-text-sm" href="#">欢迎你，<span>张协鎏</span></a>
+                <div class="am-dropdown hover-color" data-am-dropdown>
+                    <a href="javascript:;" class="am-dropdown-toggle" data-am-dropdown-toggle>
+                        <i class="am-icon-envelope"></i>
+                        <span class="am-badge am-badge-success am-round">4</span>
+                    </a>
+                    <ul class="am-padding am-dropdown-content am-text-xs" style="padding: 10px; margin-top: -10px">
+                        <li class="am-cf menu-li">
+                            <a href="javascript:;" class="menu-message-item" style="padding: 6px 2px;">
+                                <div class="menu-icon">
+                                    <img src="assets/img/user.png" class="am-circle" width="35px">
+                                </div>
+                                <div class="menu-message-body">
+                                    <div class="menu-message-title">
+                                        <i class="am-icon-circle-o am-text-success"></i>
+                                        <span>低调的小熊</span>
+                                    </div>
+                                    <!--禁止换行，超出容器部分截断（以 ... 结束）-->
+                                    <div class="am-text-truncate">
+                                        Amaze UI 的诞生，依托于 GitHub 及其他技术社区上一些优秀的资源；Amaze UI 的成长，则离不开用户的支持。
+                                    </div>
+                                    <div class="menu-message-content-time">
+                                        2017-01-14 上午 9:32
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="am-cf menu-li">
+                            <a href="javascript:;" class="menu-message-item" style="padding: 6px 2px;">
+                                <div class="menu-icon">
+                                    <img src="assets/img/user.png" class="am-circle" width="35px">
+                                </div>
+                                <div class="menu-message-body">
+                                    <div class="menu-message-title">
+                                        <i class="am-icon-circle-o am-text-success"></i>
+                                        <span>低调的小熊</span>
+                                    </div>
+                                    <!--禁止换行，超出容器部分截断（以 ... 结束）-->
+                                    <div class="am-text-truncate">
+                                        Amaze UI 的诞生，依托于 GitHub 及其他技术社区上一些优秀的资源；Amaze UI 的成长，则离不开用户的支持。
+                                    </div>
+                                    <div class="menu-message-content-time">
+                                        2017-01-14 上午 9:32
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="enter-list">
+                                <div class="am-text-center">
+                                    <i class="am-icon-envelope"></i>
+                                    <span>进入列表...</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="am-dropdown" data-am-dropdown>
+                    <a href="javascript:;" class="am-dropdown-toggle" data-am-dropdown-toggle>
+                        <i class="am-icon-bell"></i>
+                        <span class="am-badge am-badge-warning am-round">3</span>
+                    </a>
+                </div>
+                <div class="am-dropdown am-text-sm am-margin-left-lg" data-am-dropdown>
+                    <a href="javascript:;">
+                        <i class="am-icon-sign-out"></i>
+                        <span>退出</span>
+                    </a>
+                </div>
             </div>
         </div>
     </header>
+
+    <!--左边侧边栏-->
+    <div class="left-sidebar am-animation-slide-left am-text-sm">
+        <!--用户信息-->
+        <div class="left-sidebar-user-panel am-padding" align="center">
+            <div class="user-img am-padding-bottom-sm" align="center">
+                <img class="am-circle" src="assets/img/user.png" width="80px"/>
+            </div>
+            <div class="am-text-xs am-padding-bottom-xs">
+                <i class="am-icon-circle-o"></i>
+                低调的小熊
+            </div>
+            <div class="am-text-xs">
+                <a href="javascript:;">
+                    <i class="am-icon-pencil"></i>
+                    账号设置
+                </a>
+            </div>
+        </div>
+        <!--菜单信息-->
+        <div class="left-sidebar-nav">
+            <li class="left-sidebar-nav-header">
+                    <span>
+                        菜单头信息
+                    </span>
+            </li>
+            <li class="left-sidebar-nav-link">
+                <a href="index.html" class="active">
+                    <i class="am-icon-home left-sidebar-link-icon"></i>
+                    首页
+                </a>
+            </li>
+            <li class="left-sidebar-nav-link">
+                <a href="tables.html">
+                    <i class="am-icon-table left-sidebar-link-icon"></i>
+                    表格
+                </a>
+            </li>
+            <li class="left-sidebar-nav-link">
+                <a href="form.html">
+                    <i class="am-icon-wpforms left-sidebar-link-icon"></i>
+                    表单
+                </a>
+            </li>
+            <li class="left-sidebar-nav-link">
+                <a href="chart.html">
+                    <i class="am-icon-bar-chart left-sidebar-link-icon"></i>
+                    <span>图表</span>
+                </a>
+            </li>
+            <li class="left-sidebar-nav-link">
+                <a href="setting.html">
+                    <i class="am-icon-cog left-sidebar-link-icon"></i>
+                    <span>设置</span>
+                </a>
+            </li>
+        </div>
+    </div>
+
+    <!--内容区域-->
+    <div class="content-wrapper">
+
+    </div>
 </div>
 
 <script src="assets/js/jquery-3.1.1.min.js"></script>
 <script src="assets/js/amazeui.min.js"></script>
 <script src="assets/js/theme.js"></script>
-<script src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

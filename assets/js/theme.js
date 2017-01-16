@@ -7,10 +7,10 @@ var saveSelector = {
     'color': 'theme-black'
 };
 
-if ($('body').attr('data-type') != 'login') {
+if ($('body').attr('data-type') !== 'login') {
 // 判断用户是否已有自己选择的模板风格
-    if (storageLoad('SelectColor')) {
-        $('body').attr('class', storageLoad('SelectColor').color);
+    if (storageLoad('selectColor')) {
+        $('body').attr('class', storageLoad('selectColor').color);
     } else {
         storageSave(saveSelector);
         $('body').attr('class', 'theme-black');
